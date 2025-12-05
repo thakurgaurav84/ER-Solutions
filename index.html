@@ -3,63 +3,258 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ER Solutions | Ccchimney Cleaning Experts</title>
+  <title>ER Solutions | Professional Chimney Cleaning Services</title>
   <link rel="icon" href="images/erlogo.webp" type="image/png" />
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
 </head>
 <body>
   <header class="header" id="header">
     <div class="logo-container">
-      <img src="images/erlogo.webp" alt="ER Solutions Logo" class="logo-img">
+      <img src="images/erlogo.webp" alt="ER Solutions Logo" class="logo-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect fill=%22%231e3a8a%22 width=%22100%22 height=%22100%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-size=%2240%22 fill=%22white%22%3EER%3C/text%3E%3C/svg%3E'">
       <div class="logo">ER Solutions</div>
     </div>
     <nav>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="#home" class="active">Home</a></li>
         <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <div class="search-container">
-      <input type="text" id="search-input" placeholder="Search..." />
-      <button id="search-btn">🔍</button>
+    <div class="header-right">
+      <a href="tel:+1234567890" class="phone-number">
+        📞 Call Now
+      </a>
     </div>
   </header>
 
-   <!-- 🌆 HERO IMAGE SLIDER -->
-  <section class="hero-slider">
+  <!-- Hero Slider with Navigation -->
+  <section class="hero-slider" id="home">
     <div class="slides">
-      <div class="slide fade" style="background-image: url('images/erlogo.webp');"></div>
-      <div class="slide fade" style="background-image: url('images/slidebar1.jpg');"></div>
-      <div class="slide fade" style="background-image: url('images/slidebar2.png');"></div>
+      <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/slidebar2.png');"></div>
+      <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/slidebar1.jpg');"></div>
+      <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/chim1.jpg');"></div>
+      <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images');"></div>
+      <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images');"></div>
     </div>
 
+    <!-- Slider Navigation Arrows -->
+    <button class="slider-btn prev-btn" onclick="changeSlide(-1)">❮</button>
+    <button class="slider-btn next-btn" onclick="changeSlide(1)">❯</button>
+
+    <!-- Slider Dots -->
+    <div class="slider-dots">
+      <span class="dot active" onclick="goToSlide(0)"></span>
+      <span class="dot" onclick="goToSlide(1)"></span>
+      <span class="dot" onclick="goToSlide(2)"></span>
+      <span class="dot" onclick="goToSlide(3)"></span>
+      <span class="dot" onclick="goToSlide(4)"></span>
+    </div>
+  </section>
+
+  <!-- Hero Content Section (Below Slider) -->
+  <section class="hero-content">
+    <div class="hero-text">
+      <h1>Professional Chimney Cleaning Services</h1>
+      <p>Expert care for your chimney - Safe, Clean, Reliable</p>
+      <div class="cta-buttons">
+        <a href="#contact" class="btn-primary">Book Service Now</a>
+        <a href="#services" class="btn-secondary">View Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Services -->
+  <section class="services-section" id="services">
+    <h2 class="section-title">Our Chimney Services</h2>
+    <p class="section-subtitle">Comprehensive chimney care solutions for your home</p>
     
+    <div class="services-grid fade-in">
+      <div class="service-card">
+        <div class="service-icon">🧹</div>
+        <h3>Chimney Cleaning</h3>
+        <p>Professional deep cleaning to remove soot, creosote, and blockages from your chimney system.</p>
+        <a href="#contact" class="service-link">Book Now →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔍</div>
+        <h3>Chimney Inspection</h3>
+        <p>Thorough inspection to identify potential issues and ensure your chimney is safe and functional.</p>
+        <a href="#contact" class="service-link">Book Now →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔧</div>
+        <h3>Chimney Repair</h3>
+        <p>Expert repair services for damaged chimneys, including masonry, flue liner, and crown repairs.</p>
+        <a href="#contact" class="service-link">Book Now →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🛡️</div>
+        <h3>Chimney Cap Installation</h3>
+        <p>Install protective caps to prevent water damage, animal intrusion, and debris accumulation.</p>
+        <a href="#contact" class="service-link">Book Now →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">💨</div>
+        <h3>Smoke & Draft Issues</h3>
+        <p>Diagnose and fix smoke backdraft problems to ensure proper ventilation and air quality.</p>
+        <a href="#contact" class="service-link">Book Now →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🚨</div>
+        <h3>Emergency Services</h3>
+        <p>24/7 emergency support for urgent chimney problems and fire hazard prevention.</p>
+        <a href="#contact" class="service-link">Book Now →</a>
+      </div>
+    </div>
   </section>
 
-  <!-- 🌟 FEATURES SECTION -->
-  <section class="features fade-in">
-    <div class="feature">
-      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
-      <h3>Trusted Professionals</h3>
-      <p>Experienced technicians ensuring top-quality chimney cleaning and inspection.</p>
-    </div>
-    <div class="feature">
-      <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png" alt="">
-      <h3>Affordable Service</h3>
-      <p>We deliver quality cleaning without burning your wallet.</p>
-    </div>
-    <div class="feature">
-      <img src="https://cdn-icons-png.flaticon.com/512/3190/3190132.png" alt="">
-      <h3>Emergency Support</h3>
-      <p>Available 24/7 for urgent chimney issues and repairs.</p>
+  <!-- Why Choose Us -->
+  <section class="why-choose-section" id="about">
+    <h2 class="section-title">Why Choose ER Solutions?</h2>
+    <p class="section-subtitle">Your trusted chimney care partner</p>
+    
+    <div class="features-grid fade-in">
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Professionals" class="feature-icon">
+        <h3>Certified Experts</h3>
+        <p>Our technicians are fully certified and trained in the latest chimney care techniques.</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png" alt="Affordable" class="feature-icon">
+        <h3>Affordable Pricing</h3>
+        <p>Competitive rates with transparent pricing - no hidden charges or surprises.</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3190/3190132.png" alt="Support" class="feature-icon">
+        <h3>24/7 Emergency Service</h3>
+        <p>Available round the clock for urgent chimney repairs and emergency situations.</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3093/3093285.png" alt="Guarantee" class="feature-icon">
+        <h3>Quality Guarantee</h3>
+        <p>We stand behind our work with a satisfaction guarantee on all services.</p>
+      </div>
     </div>
   </section>
 
+  <!-- How It Works -->
+  <section class="how-it-works">
+    <h2 class="section-title">How It Works</h2>
+    <p class="section-subtitle">Simple steps to get your chimney serviced</p>
+    
+    <div class="steps-container fade-in">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Book Your Service</h3>
+        <p>Call us or fill out our online form to schedule your chimney service at your convenience.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Expert Inspection</h3>
+        <p>Our certified technician arrives on time and conducts a thorough inspection of your chimney.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Professional Service</h3>
+        <p>We perform the cleaning, repair, or installation with precision and care.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">4</div>
+        <h3>Quality Assurance</h3>
+        <p>Final inspection and cleanup ensure your complete satisfaction with our work.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <h2 class="counter" data-target="1000">0</h2>
+        <p>Happy Customers</p>
+      </div>
+      <div class="stat-item">
+        <h2 class="counter" data-target="15">0</h2>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat-item">
+        <h2 class="counter" data-target="5000">0</h2>
+        <p>Chimneys Cleaned</p>
+      </div>
+      <div class="stat-item">
+        <h2 class="counter" data-target="100">0</h2>
+        <p>Satisfaction Rate</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section" id="contact">
+    <div class="cta-content fade-in">
+      <h2>Ready to Schedule Your Service?</h2>
+      <p>Don't wait until it's too late. Keep your home safe with professional chimney maintenance.</p>
+      <div class="cta-buttons">
+        <a href="tel:+1234567890" class="btn-primary">Call Now: +1 (234) 567-890</a>
+        <a href="mailto:info@ersolutions.com" class="btn-secondary">Email Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 ER Solutions | All Rights Reserved</p>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>ER Solutions</h3>
+        <p>Your trusted partner for professional chimney cleaning and maintenance services.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Our Services</h3>
+        <ul>
+          <li><a href="#services">Chimney Cleaning</a></li>
+          <li><a href="#services">Chimney Inspection</a></li>
+          <li><a href="#services">Chimney Repair</a></li>
+          <li><a href="#services">Emergency Services</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <ul>
+          <li>📞 +99999999999</li>
+          <li>📧 info@ersolutions.com</li>
+          <li>📍 Your City, State</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2025 ER Solutions | All Rights Reserved | Professional Chimney Services</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
